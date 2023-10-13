@@ -12,36 +12,10 @@ function App() {
   return (
     <GoogleOAuthProvider clientId="88829588577-fa0e348ml0u09tlbehii74hadkcdus5p.apps.googleusercontent.com">
       <div className="App">
-      <Router>
-      <Route path="/chatbot-iframe/id" element={<ChatbotFrame />} />
-      </Router>
         <Router>
-          <Header />
           <Routes>
-            <Route path="/" element={<></>} />
-            <Route
-              path="/chatbot/*"
-              element={
-                <>
-                  <h2>BAZA Chat Bot Title</h2>
-                  <div className="chatbot-wrapper">
-                    <ChatBot />
-                  </div>
-                </>
-              }
-            />
-            <Route path="/my-chatbots" element={<MyChatbots />} />
+            <Route path="/chatbot-iframe/id" element={<ChatbotFrame />} />
           </Routes>
-          <Modals />
-          <ToastContainer
-                    position="bottom-left"
-                    autoClose={3000}
-                    newestOnTop={false}
-                    closeOnClick={false}
-                    rtl={false}
-                    pauseOnFocusLoss
-                    draggable
-                />
         </Router>
       </div>
     </GoogleOAuthProvider>
