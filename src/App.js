@@ -12,6 +12,9 @@ function App() {
   return (
     <GoogleOAuthProvider clientId="88829588577-fa0e348ml0u09tlbehii74hadkcdus5p.apps.googleusercontent.com">
       <div className="App">
+      <Router>
+      <Route path="/chatbot-iframe/id" element={<ChatbotFrame />} />
+      </Router>
         <Router>
           <Header />
           <Routes>
@@ -28,7 +31,6 @@ function App() {
               }
             />
             <Route path="/my-chatbots" element={<MyChatbots />} />
-            <Route path="/chatbot-iframe/id" element={<ChatbotFrame />} />
           </Routes>
           <Modals />
           <ToastContainer
