@@ -1,0 +1,30 @@
+.chatbot-answear-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 32px;
+    color: #000;
+    padding-top: 12px;
+
+    .chatbot-answear-container {
+        border-radius: 8px;
+        margin-bottom: 15px;
+        padding: 12px;
+        overflow: auto;
+        background: #ECEFF3;
+       
+        .chatbot-answear-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            overflow-wrap: break-word;
+
+            .chatbot-answear-text {
+                text-align: left;
+
+                p {
+
+                }
+            }
+        }
+    }
+}

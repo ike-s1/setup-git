@@ -1,0 +1,55 @@
+.custom-checkbox {
+    width: 100%;
+    display: flex;
+    padding: 8px 16px 8px 16px;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
+    border-radius: 4px;
+    border: 1px solid #E7E7E7;
+    min-height: 40px;
+    font-family: Spline Sans;
+
+
+    .MuiSwitch-track {
+        background-color: #D9D9D9;
+        border-radius: 20px;
+
+
+        &.Mui-checked {
+            background-color: #6385FF;
+
+            .off {
+                visibility: hidden;
+            }
+
+            .on {
+                visibility: visible;
+                color: white;
+            }
+
+        }
+
+    }
+
+    .MuiSwitch-thumb {
+        box-shadow: none;
+    }
+
+    .MuiTypography-root {
+        color: #878787;
+        font-size: 16px;
+        font-family: Spline Sans;
+        font-weight: 500;
+
+    }
+
+    .on {
+        margin-left: 15px;
+        visibility: hidden;
+    }
+
+    .off {
+        margin-right: 15px;
+    }
+}

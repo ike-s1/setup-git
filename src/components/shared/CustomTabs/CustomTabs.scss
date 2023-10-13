@@ -1,0 +1,60 @@
+.custom-tabs {
+    width: 226px;
+
+    ul {
+      text-align: left;
+
+      li {
+        cursor: pointer;
+        border-radius: 8px;
+        padding: 4px 8px;
+        margin-bottom: 4px;
+        align-items: center;
+        gap: 8px;
+        align-self: stretch;
+        position: relative;
+
+        a {
+          display: inline-block;
+          width: 100%;
+        }
+        
+        &:before {
+          content: " ";
+          display: none;
+          position: absolute;
+          left: 8px;
+          top: 50%;
+          width: 8px;
+          height: 8px;
+          transform: translateY(-50%);
+          border-radius: 50%;
+          background: #113DD8;;
+
+        }
+
+        &::marker {
+          color: #113DD8;
+          width: 5px;
+          
+        }
+       
+        &:hover {
+          background: #ECEFF3;
+        }
+
+        &.active {
+          background: #ECEFF3;
+          color: #113DD8;
+          padding-left: 24px;
+
+          &:before {
+            content: " ";
+            display: unset;
+           
+          }
+        }
+      }
+    }
+
+  }
