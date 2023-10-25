@@ -1,3 +1,4 @@
+@import '../../../styles//variables';
 
 .upload-files-wrapper {
   
@@ -7,6 +8,7 @@
   justify-content: center;
 
   .uploader-content {
+    height: 210px;
     border-radius: 16px;
     width: 100%;
     box-sizing: border-box;
@@ -14,7 +16,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 44px 16px 63px;
+    padding:  40px 16px;
     background: #eceff3;
   }
   
@@ -26,9 +28,27 @@
   .file-uplaoder {
     padding: 16px;
 
+
+      .upload-icon {
+       width: auto;
+      }
+
     label {
       width: 100%;
       display: block;
+    }
+
+    .upload-info {
+      margin: 20px 0px;
+      .upload-text {
+        color: $blue;
+        font-weight: 600;
+      }
+  
+      .upload-supported {
+        color:#878787;
+      }
+
     }
   }
   

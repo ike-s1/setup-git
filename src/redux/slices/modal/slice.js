@@ -4,6 +4,7 @@ const initialState = {
   openSignInModal: false,
   openSignUpModal: false,
   openContactUsModal: false,
+  openEmbedModal: false
 };
 
 export const modalSlice = createSlice({
@@ -19,10 +20,13 @@ export const modalSlice = createSlice({
     togleContactUsModal(state, action) {
       state.openContactUsModal = action.payload;
     },
+    togleEmbedModal(state,action) {
+      state.openEmbedModal = action.payload;
+    }
   },
 });
 
-export const { togleSignInModal, togleSignUpModal, togleContactUsModal } =
+export const { togleSignInModal, togleSignUpModal, togleContactUsModal, togleEmbedModal} =
   modalSlice.actions;
 
 export default modalSlice.reducer;

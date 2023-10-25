@@ -1,0 +1,31 @@
+@import "../../../styles/variables";
+
+.chatbot-message-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 32px;
+    color: #FFF;
+
+    .chatbot-message-container {
+        border-radius: 8px;
+        margin-bottom: 15px;
+        padding: 12px;
+        overflow: auto;
+        background: $blue;
+       
+        .chatbot-message-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            overflow-wrap: break-word;
+
+            .chatbot-message-text {
+                text-align: left;
+
+                p {
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+@import "../../../styles/variables";
+
+
+.embed-modal-box {
+    text-align: left;
+    font-size: 14px;
+
+    .embed-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .embed-desc {
+            margin-bottom: 10px;
+        }
+    }
+
+    .embed-iframe,
+    .embed-script {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .embed-block {
+            width: 100%;
+            text-align: left;
+            line-height: 110%;
+            padding: 5px;
+            border: 10px;
+            background-color: white;
+            margin-bottom: 10px;
+
+            pre {
+                text-align: left;
+                text-wrap: wrap;
+                line-height: 105%;
+
+                code {
+                    line-height: 100%;
+                    font-size: 12px;
+                    cursor: text;
+                }
+            }
+        }
+
+        .copy-block {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding:  5px 10px;
+            border: 1px solid $main-color;
+            border-radius: 10px;
+
+            span {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    h3 {
+        display: inline-block;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    img {
+        cursor: pointer;
+    }
+
+    .rodal-dialog {
+        padding: 20px;
+    }
+}

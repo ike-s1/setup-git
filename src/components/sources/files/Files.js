@@ -5,32 +5,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { deleteFile, setFiles } from "../../../redux/slices/chatbot/slice";
 import { UploadedList } from "../../shared/UploadedList/UploadedList";
 import { selectChatbot } from "../../../redux/slices/chatbot/selectors";
+import uploadIcon from "../../../resources/icons/upload.png";
 
 const fileTypes = ["PDF", "DOC", "CSV", "CODE", "MDX", "LOCAL", "TXT"];
 
-function UploadIcon({ className }) {
-  return (
-    <div className={`${className}`}>
-      <svg
-        fill="none"
-        viewBox="0 0 32.6569 30"
-        xmlns="http://www.w3.org/2000/svg"
-        x="0"
-        y="0"
-      >
-        <path
-          id="Vector_2"
-          d="M8.2419,21.055c-10.215,1.135 -9.08,-11.35 0,-10.215c-3.405,-12.485 15.89,-12.485 14.755,-3.405c11.35,-3.405 11.35,14.755 1.135,13.62M10.5119,16.515l5.675,-4.54M16.1869,11.975l5.675,4.54M16.1869,11.975v17.025"
-          stroke="#1844DF"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          xmlns="http://www.w3.org/2000/svg"
-        />
-      </svg>
-    </div>
-  );
-}
 
 export const Files = () => {
   const dispatch = useDispatch();
@@ -83,7 +61,7 @@ const handleDeleteFile = (name) => {
               types={fileTypes}
             >
               <div className={`uploader-content`}>
-                <UploadIcon className="upload-icon" />
+                <img className={"upload-icon"} src={uploadIcon} alt="icon"/>
                 <p className={`upload-info`}>
                   <span className={`upload-text`}>
                     Drag &amp; Drop files here, or click to select files

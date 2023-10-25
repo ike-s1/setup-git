@@ -1,3 +1,6 @@
+@import "../../../styles/variables";
+
+
 .custom-menu {
     width: 1060px;
     font-size: 18px;
@@ -19,7 +22,7 @@
                     left: 0;
                     width: 100%;
                     height: 2px;
-                    background-color: #1844DF;
+                    background-color: $blue;
                     opacity: 0;
                     transform-origin: bottom right;
                     transition: all 0.5s linear;
@@ -27,7 +30,7 @@
 
                 &:hover,
                 &.active {
-                    -webkit-text-stroke: 0.7px #333;
+                    -webkit-text-stroke: 0.7px $main-color;
 
                     &::after {
                         opacity: 1;

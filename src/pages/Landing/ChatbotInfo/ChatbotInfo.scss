@@ -1,0 +1,38 @@
+.chatbotInfo-section {
+    margin-bottom: 138px;
+    width: 100%;
+   
+    @media (min-width: 1440px) {
+        max-width: 1280px;
+    }
+
+
+    .chabotInfo-content {
+        width: 100%;
+
+        .chatbotInfo-title {
+            margin: 24px 0px 48px;
+        }
+
+        .info-block {
+            height: 573px;
+            display: flex;
+            column-gap: 24px;
+
+            .info-sidebar {
+                width: 416px;
+                height: 100%;
+                border-radius: 24px;
+                background: linear-gradient(344deg, #E7E7E7 10.13%, #DCDFFF 87.89%);
+            }
+
+            .info-image {
+                height: 100%;
+                flex: 1 1 0;
+                border-radius: 24px;
+                background: #FFF;
+                box-shadow: -15px 10px 50px 0px rgba(24, 68, 223, 0.20);
+            }
+        }
+    }
+}

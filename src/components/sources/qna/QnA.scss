@@ -1,4 +1,6 @@
 
+@import "../../../styles/variables";
+
 .upload-qna-wrapper {
   width: 100%;
   border-bottom: 1px solid #D9D9D9;
@@ -21,7 +23,7 @@
     }
 
     p {
-      color: #1844DF;
+      color: $blue;
       font-weight: 600;
       span {
         color: #B4B4B4;

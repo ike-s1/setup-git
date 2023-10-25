@@ -1,14 +1,14 @@
+@import "../../styles/variables";
+
 .header {
   width: 100%;
   padding: 10px 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #333;
+  color: $main-color;
   box-sizing: border-box;
   font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
   position: relative;
 
   &::before {
@@ -35,12 +35,13 @@
     list-style-type: none;
     display: flex;
     gap: 32px;
+    margin: 16px;
   }
 
   li {
     cursor: pointer;
     position: relative;
-    color: #333;
+    color: $main-color;
 
 
     a {
@@ -52,7 +53,7 @@
         left: 0;
         width: 100%;
         height: 2px;
-        background-color: #1844DF;
+        background-color: $blue;
         opacity: 0;
         transform-origin: bottom right;
         transition: all 0.5s linear;
@@ -85,7 +86,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #1844DF;
+    background-color: $blue;
     opacity: 0;
     transform-origin: bottom right;
     transition: all 0.5s linear;
@@ -93,7 +94,7 @@
 
   &:hover,
   &.active {
-    -webkit-text-stroke: 0.7px #333;
+    -webkit-text-stroke: 0.7px $main-color;
 
     &::after {
       opacity: 1;
@@ -109,7 +110,6 @@
 
 .login-register span {
   font-weight: 700;
-  color: #333;
   text-decoration: none;
   cursor: pointer;
   margin-right: 8px;

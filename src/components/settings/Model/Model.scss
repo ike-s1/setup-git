@@ -1,3 +1,5 @@
+@import "../../../styles/variables";
+
 .model-wrapper {
     width: 100%;
     text-align: left;
@@ -58,7 +60,7 @@
             justify-content: space-between;
 
             span {
-                color: #1844DF;
+                color: $blue;;
                 font-weight: 600;
             }
         }
@@ -97,7 +99,7 @@
 
         .MuiSlider-valueLabel {
             background-color: #6385FF;
-            color: #333; 
+            color: $main-color;
         }
 
         p {
