@@ -3,6 +3,7 @@ import "./Embed.scss";
 import Rodal from "rodal";
 import copyIcon from "../../../resources/icons/🦆 icon _copy_.png";
 import copy from "copy-to-clipboard";
+import { toast } from 'react-toastify';
 
 
 const id = '1111'
@@ -16,6 +17,7 @@ export const EmbedModal = ({ visible, handleClose }) => {
   function copyToClipboard(element) {
     const text = element.current.textContent;
     copy(text);
+    toast.success("copied to clipboard")
   }
 
   return (
@@ -48,9 +50,9 @@ frameborder="0"
 ></iframe>`}</code>
               </pre>
             </div>
-            <div className="copy-block">
+            <div onClick={() => copyToClipboard(iframeElement)} className="copy-block">
               <span>Copy Iframe</span>
-              <img src={copyIcon} onClick={() => copyToClipboard(iframeElement)} alt="icon" />
+              <img src={copyIcon}  alt="icon" />
             </div>
           </div>
           <div className="embed-script">
@@ -74,9 +76,9 @@ defer>
 </script>`}
               </code></pre>
             </div>
-            <div className="copy-block">
+            <div onClick={() => copyToClipboard(scriptElement)} className="copy-block">
               <span>Copy Script</span>
-              <img src={copyIcon} onClick={() => copyToClipboard(scriptElement)} alt="icon" />
+              <img src={copyIcon} alt="icon" />
             </div>
           </div>
         </div>

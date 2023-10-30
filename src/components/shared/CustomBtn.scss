@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 .custom-button {
     width: fit-content;
     cursor: pointer;
@@ -9,6 +11,7 @@
     padding: 0px 24px;
     justify-content: center;
     align-items: center;
+    background: $blue;
 
     &.animate {
         display:inline-block;
@@ -18,6 +21,10 @@
         &:hover {
             transform: scaleX(1.15);
         }
+    }
+
+    &.dark {
+        background: $main-color;
     }
 
     a {

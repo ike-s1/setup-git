@@ -9,6 +9,7 @@ import zapierLogo from "../../resources/integrations/zapier logo.png";
 import slackLogo from "../../resources/integrations/slack logo.png";
 import arrowRight from "../../resources/arrow.png";
 
+
 export const Integrations = () => {
   return (
     <div className="integrations-wrapper">

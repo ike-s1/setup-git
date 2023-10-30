@@ -2,7 +2,6 @@ import React from "react";
 import "./Landing.scss";
 import { Intro } from "./Intro/Intro";
 import { Demo } from "./Demo/Demo";
-import { ChatbotInfo } from "./ChatbotInfo/ChatbotInfo";
 import { LiveChat } from "./LiveChat/LiveChat";
 import { Pricing } from "./Pricing/Pricing";
 import { ContactUs } from "./ContactUs/ContactUs";
@@ -10,6 +9,7 @@ import { FAQs } from "./FAQs/FAQs";
 import { QuestionContact } from "./QuestionContact/QuestionContact";
 import { Integrates } from "./Integrates/Integrates";
 import { Footer } from "./Footer/Footer";
+import { Features } from "./Features/Features";
 
 export const Landing = () => {
   return (
@@ -17,7 +17,7 @@ export const Landing = () => {
       <div className="landing-content">
             <Intro/>
             <Demo/>
-            <ChatbotInfo/>
+            <Features/>
             <LiveChat/>
             <Pricing/>
             <ContactUs/>

@@ -3,6 +3,17 @@
 .demo-section {
     width: 100%;
     margin-bottom: 110px;
+    position: relative;
+
+    .blue-wave {
+        position: absolute;
+        right: -15%;
+        bottom: -67px;
+    }
+
+    @media (min-width: 1440px) {
+        max-width: 1124px;
+    }
     
     .demo-content {
         
@@ -22,9 +33,6 @@
             border-radius: 24px;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), #DBDBDB;
         }
-    }
 
-    @media (min-width: 1440px) {
-        max-width: 1124px;
     }
 }

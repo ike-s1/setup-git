@@ -3,11 +3,10 @@ import './CustomBtn.scss';
 
 const CustomButton = ({ onClick, dark=false, children, disabled,className, animated=false }) => {
 
-    const buttonClassName = `custom-button ${className || ''} ${animated ? 'animate' : ''}`;
+    const buttonClassName = `custom-button ${className || ''} ${animated ? 'animate' : ''} ${dark ? 'dark': ''}`;
     
     return (
     <button
-      style={{background: dark ? '#333333' :'#1844DF'}}
       className={buttonClassName}
       onClick={onClick}
       disabled={disabled}

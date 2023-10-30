@@ -1,15 +1,39 @@
 import React, { useState } from "react";
 import "./Pricing.scss";
 import CustomButton from "../../../components/shared/CustomBtn";
-import check from "../../../resources/icons/check.png";
+import check from "../../../resources/icons/check.svg";
+import checkBlack from "../../../resources/icons/check-black.svg";
 
 const pricingPlans = ["monthly", "yearly"];
+const freePlanFeatures = [
+  "Feature text goes here",
+  "Feature text goes here",
+  "Feature text goes here",
+  "Feature text goes here",
+  "Feature text goes here",
+]
+const smallPlanFeatures = [
+  "Feature text goes here",
+  "Feature text goes here",
+  "Feature text goes here",
+  "Feature text goes here",
+  "Feature text goes here",
+]
+const enterprisePlanFeatures = [
+  "Feature text goes here",
+  "Feature text goes here",
+  "Feature text goes here",
+  "Feature text goes here",
+  "Feature text goes here",
+]
 
 export const Pricing = () => {
   const [plan, setPlan] = useState("monthly");
 
   return (
     <section id="pricing" className="pricing-section">
+      <div className="ellipse-one"></div>
+      <div className="ellipse-two"></div>
       <div className="pricing-content">
         <h2 className="pricing-title title">Pricing plan</h2>
         <p className="pricing-subtitle">
@@ -36,29 +60,15 @@ export const Pricing = () => {
                 <div className="price-block">
                   <p className="price">Free</p>
                 </div>
-                <CustomButton animated={true}>Get started</CustomButton>
+                <CustomButton >Get started</CustomButton>
               </div>
               <div className="features-block">
-                <div className="feature-item">
-                  <img src={check} alt="arrow" />
-                  <p>Feature text goes here</p>
+                {freePlanFeatures.map( f => {
+                  return  <div className="feature-item">
+                  <img src={checkBlack} alt="check" />
+                  <p>{f}</p>
                 </div>
-                <div className="feature-item">
-                  <img src={check} alt="arrow" />
-                  <p>Feature text goes here</p>
-                </div>
-                <div className="feature-item">
-                  <img src={check} alt="arrow" />
-                  <p>Feature text goes here</p>
-                </div>
-                <div className="feature-item">
-                  <img src={check} alt="arrow" />
-                  <p>Feature text goes here</p>
-                </div>
-                <div className="feature-item">
-                  <img src={check} alt="arrow" />
-                  <p>Feature text goes here</p>
-                </div>
+                })}               
               </div>
             </div>
           </div>
@@ -74,29 +84,15 @@ export const Pricing = () => {
                   </p>
                   <span className="price-subtitle">or $299 yearly</span>
                 </div>
-                <CustomButton animated={true}>Get started</CustomButton>
+                <CustomButton >Get started</CustomButton>
               </div>
               <div className="features-block">
-                <div className="feature-item">
-                  <img src={check} alt="arrow" />
-                  <p>Feature text goes here</p>
+              {smallPlanFeatures.map( f => {
+                  return  <div className="feature-item">
+                  <img src={check} alt="check" />
+                  <p>{f}</p>
                 </div>
-                <div className="feature-item">
-                  <img src={check} alt="arrow" />
-                  <p>Feature text goes here</p>
-                </div>
-                <div className="feature-item">
-                  <img src={check} alt="arrow" />
-                  <p>Feature text goes here</p>
-                </div>
-                <div className="feature-item">
-                  <img src={check} alt="arrow" />
-                  <p>Feature text goes here</p>
-                </div>
-                <div className="feature-item">
-                  <img src={check} alt="arrow" />
-                  <p>Feature text goes here</p>
-                </div>
+                })}  
               </div>
             </div>
           </div>
@@ -113,29 +109,15 @@ export const Pricing = () => {
                   </p>
                   <span className="price-subtitle">or $499 yearly</span>
                 </div>
-                <CustomButton animated={true}>Get started</CustomButton>
+                <CustomButton>Get started</CustomButton>
               </div>
               <div className="features-block">
-                <div className="feature-item">
-                  <img src={check} alt="arrow" />
-                  <p>Feature text goes here</p>
+              {enterprisePlanFeatures.map( f => {
+                  return  <div className="feature-item">
+                  <img src={checkBlack} alt="check" />
+                  <p>{f}</p>
                 </div>
-                <div className="feature-item">
-                  <img src={check} alt="arrow" />
-                  <p>Feature text goes here</p>
-                </div>
-                <div className="feature-item">
-                  <img src={check} alt="arrow" />
-                  <p>Feature text goes here</p>
-                </div>
-                <div className="feature-item">
-                  <img src={check} alt="arrow" />
-                  <p>Feature text goes here</p>
-                </div>
-                <div className="feature-item">
-                  <img src={check} alt="arrow" />
-                  <p>Feature text goes here</p>
-                </div>
+                })}  
               </div>
             </div>
           </div>

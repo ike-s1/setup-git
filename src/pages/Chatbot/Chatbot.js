@@ -41,7 +41,7 @@ export const Chatbot = () => {
   };
 
   const handleSendMessage = async () => {
-    if(message.length < 4) return 
+    if(message.length < 1) return 
     try {
       setLoadingAnswear(true);
       setDialog((prev) => [...prev, { type: "question", text: message }]);

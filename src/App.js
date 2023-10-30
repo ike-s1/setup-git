@@ -11,6 +11,7 @@ import { Modals } from "./components/modals/Modals";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import { MyChatbots } from "./pages/MyChatbots/MyChatbots";
 import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import { ChatBotControls } from "./pages/ChatbotControls/ChatBotControls";
 import { Landing } from "./pages/Landing/Landing";
 

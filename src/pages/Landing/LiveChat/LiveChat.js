@@ -1,5 +1,5 @@
 import React from "react";
-import './LiveChat.scss';
+import "./LiveChat.scss";
 import { ChatbotItem } from "../../ChatbotItem/ChatbotItem";
 
 export const LiveChat = () => {
@@ -8,12 +8,12 @@ export const LiveChat = () => {
       <div className="live-chat-content">
         <h4 className="live-chat-title title">Try Demo chat</h4>
         <p className="live-chat-subtitle">
-          This chatbot was trained on a documents, wiki and websites about Dark
-          Country game. You can embed a widget like this on any page on your
-          website!
+          This demo chat was trained on this website, as well as we added custom
+          Q/As based on user’s requests as it grew inside of our internal
+          knowledge base and F.A.Q materials.
         </p>
         <div className="live-chat-block">
-            <ChatbotItem/>
+          <ChatbotItem />
         </div>
       </div>
     </section>
