@@ -21,30 +21,6 @@
         .question-block {
             width: 50%;
 
-            .question-item {
-                width: 100%;
-                height: 72px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                border-bottom: 1px solid #000;
-
-                &:first-child {
-                    border-top: 1px solid #000;
-                }
-
-                .item-header {
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-
-                    img {
-                        cursor: pointer;
-                        height: 10px;
-                    }
-                }
-            }
         }
     }
 

@@ -1,6 +1,50 @@
 import React from "react";
 import "./FAQs.scss";
-import arrowDown from "../../../resources/icons/Vector 1.png";
+import { FAQItem } from "./FAQItem/FAQItem";
+
+const questionsLeft = [{
+  question: 'Question text goes here',
+  answear: 'Answear text goes here Answear text goes here'
+},
+{
+  question: 'Question text goes here',
+  answear: 'Answear text goes here Answear text goes here'
+},
+{
+  question: 'Question text goes here',
+  answear: 'Answear text goes here Answear text goes here'
+},
+{
+  question: 'Question text goes here',
+  answear: 'Answear text goes here Answear text goes here'
+},
+{
+  question: 'Question text goes here',
+  answear: 'Answear text goes here Answear text goes here'
+},
+]
+
+const questionsRight = [{
+  question: 'Question text goes here',
+  answear: 'Answear text goes here Answear text goes here'
+},
+{
+  question: 'Question text goes here',
+  answear: 'Answear text goes here Answear text goes here'
+},
+{
+  question: 'Question text goes here',
+  answear: 'Answear text goes here Answear text goes here'
+},
+{
+  question: 'Question text goes here',
+  answear: 'Answear text goes here Answear text goes here'
+},
+{
+  question: 'Question text goes here',
+  answear: 'Answear text goes here Answear text goes here'
+},
+]
 
 export const FAQs = () => {
   return (
@@ -9,78 +53,14 @@ export const FAQs = () => {
         <h2 className="faqs-title title">FAQs</h2>
         <div className="faqs-questions">
         <div className="question-block">
-          <div className="question-item">
-            <div className="item-header">
-              <p>Question text goes here</p>
-              <img src={arrowDown} alt="arrow" />
-            </div>
-            <p className="item-answear"></p>
-          </div>
-          <div className="question-item">
-            <div className="item-header">
-              <p>Question text goes here</p>
-              <img src={arrowDown} alt="arrow" />
-            </div>
-            <p className="item-answear"></p>
-          </div>
-          <div className="question-item">
-            <div className="item-header">
-              <p>Question text goes here</p>
-              <img src={arrowDown} alt="arrow" />
-            </div>
-            <p className="item-answear"></p>
-          </div>
-          <div className="question-item">
-            <div className="item-header">
-              <p>Question text goes here</p>
-              <img src={arrowDown} alt="arrow" />
-            </div>
-            <p className="item-answear"></p>
-          </div>
-          <div className="question-item">
-            <div className="item-header">
-              <p>Question text goes here</p>
-              <img src={arrowDown} alt="arrow" />
-            </div>
-            <p className="item-answear"></p>
-          </div>
+          {questionsLeft.map(({question, answear}) => {
+            return <FAQItem question={question} answear={answear}/>
+          })}
         </div>
         <div className="question-block">
-          <div className="question-item">
-            <div className="item-header">
-              <p>Question text goes here</p>
-              <img src={arrowDown} alt="arrow" />
-            </div>
-            <p className="item-answear"></p>
-          </div>
-          <div className="question-item">
-            <div className="item-header">
-              <p>Question text goes here</p>
-              <img src={arrowDown} alt="arrow" />
-            </div>
-            <p className="item-answear"></p>
-          </div>
-          <div className="question-item">
-            <div className="item-header">
-              <p>Question text goes here</p>
-              <img src={arrowDown} alt="arrow" />
-            </div>
-            <p className="item-answear"></p>
-          </div>
-          <div className="question-item">
-            <div className="item-header">
-              <p>Question text goes here</p>
-              <img src={arrowDown} alt="arrow" />
-            </div>
-            <p className="item-answear"></p>
-          </div>
-          <div className="question-item">
-            <div className="item-header">
-              <p>Question text goes here</p>
-              <img src={arrowDown} alt="arrow" />
-            </div>
-            <p className="item-answear"></p>
-          </div>
+        {questionsRight.map(({question, answear}) => {
+            return <FAQItem question={question} answear={answear}/>
+          })}
         </div>
         </div>
       </div>

@@ -4,7 +4,10 @@ import CustomButton from "../../../components/shared/CustomBtn";
 import check from "../../../resources/icons/check.svg";
 import checkBlack from "../../../resources/icons/check-black.svg";
 
-const pricingPlans = ["monthly", "yearly"];
+const MONTHLY = "MONTHLY";
+const YEARLY = "YEARLY";
+
+const pricingPlans = [MONTHLY, YEARLY];
 const freePlanFeatures = [
   "Feature text goes here",
   "Feature text goes here",
@@ -27,8 +30,15 @@ const enterprisePlanFeatures = [
   "Feature text goes here",
 ]
 
+
+const SMALL_MO_PRICE = 29;
+const ENT_MO_PRICE = 49;
+const SMALL_YEAR_PRICE = 299;
+const ENT_YEAR_PRICE = 499;
+
+
 export const Pricing = () => {
-  const [plan, setPlan] = useState("monthly");
+  const [plan, setPlan] = useState(MONTHLY);
 
   return (
     <section id="pricing" className="pricing-section">
@@ -80,9 +90,9 @@ export const Pricing = () => {
               <div className="pricing-info-block">
                 <div className="price-block">
                   <p className="price">
-                    $29<span>/mo</span>
+                    ${plan === MONTHLY ? SMALL_MO_PRICE : SMALL_YEAR_PRICE}<span>{plan === MONTHLY ? '/mo' : '/year'}</span>
                   </p>
-                  <span className="price-subtitle">or $299 yearly</span>
+                  <span className="price-subtitle">or {plan === MONTHLY ? `$${SMALL_YEAR_PRICE} yearly` :  `$${SMALL_MO_PRICE} monthly`} </span>
                 </div>
                 <CustomButton >Get started</CustomButton>
               </div>
@@ -105,9 +115,9 @@ export const Pricing = () => {
               <div className="pricing-info-block">
                 <div className="price-block">
                   <p className="price">
-                    $49<span>/mo</span>
+                  ${plan === MONTHLY ? ENT_MO_PRICE : ENT_YEAR_PRICE}<span>{plan === MONTHLY ? '/mo' : '/year'}</span>
                   </p>
-                  <span className="price-subtitle">or $499 yearly</span>
+                  <span className="price-subtitle">or {plan === MONTHLY ? `$${ENT_YEAR_PRICE} yearly` :  `$${ENT_MO_PRICE} monthly`} </span>
                 </div>
                 <CustomButton>Get started</CustomButton>
               </div>

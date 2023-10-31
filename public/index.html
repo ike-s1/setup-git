@@ -14,15 +14,22 @@
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
-  <script>
-    window.embeddedChatbotConfig = {
-      chatbotId: "Lq74wlmWd7KRu8b0XzwxN",
-      domain: "www.chatbase.co"
-    }
-  </script>
-  <script src="https://setup-git-ike-s1.vercel.app/embedBaza.min.js" , chatbotId="Lq74wlmWd7KRu8b0XzwxN" ,
-    domain="www.chatbase.co" defer>
-    </script>
-  </script>
 </body>
+
+<script>
+  window.embeddedChatbotConfig = {
+    chatbotId: "Lq74wlmWd7KRu8b0XzwxN",
+    domain: "www.chatbase.co"
+  }
+</script>
+ <script>
+  if (!window.location.pathname.includes('/chatbot-iframe/')) {
+    const script = document.createElement("script");
+    script.src = "/embedBaza.min.js";
+    script.chatbotId = "Lq74wlmWd7KRu8b0XzwxN";
+    script.domain = "www.chatbase.co";
+    script.defer = true;
+    document.body.appendChild(script);
+  }
+</script>
 </html>

@@ -10,8 +10,7 @@ export const ChatbotItem = () => {
   const [message, setMessage] = useState("");
   const [loadingAnswear, setLoadingAnswear] = useState(false);
   const chatbotDialogRef = useRef();
-
-
+  
   const [dialog, setDialog] = useState([
     {
       type: "answear",
