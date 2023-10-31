@@ -157,7 +157,6 @@
                     transform: rotate(45deg);
                 }
                 
-
                  .circle-item-one {
                    right: 56%!important;
                  }
@@ -167,7 +166,6 @@
                     width: 190px!important;
                     
                  }
-
 
                  .two {
                     right: 56%!important;
@@ -208,8 +206,8 @@
                     position: absolute;
                     bottom: 0;
                     right: 10px;
-                   
 
+                   
                     .circle-item {
                         position: absolute;
                         border: 2px solid $blue;
@@ -233,33 +231,33 @@
                     }
 
                     .two {
-                        width: 119px;
+                        width: 109px;
                         height: 119px;
                         bottom: -20px;
                         border-color: white;
                     }
 
                     .three {
-                        width: 205px;
-                        height: 205px;
+                        width: 194px;
+                        height: 194px;
                         bottom: -45px;
 
                     }
 
                     .four {
-                        width: 238px;
-                        height: 238px;
+                        width: 229px;
+                        height: 229px;
                         bottom: -45px;
                     }
 
                     .five {
-                        width: 273px;
-                        height: 273px;
+                        width: 264px;
+                        height: 264px;
                         bottom: -45px;
                     }
                     .six {
-                        width: 306px;
-                        height: 306px;
+                        width: 297px;
+                        height: 297px;
                         bottom: -45px;
                     }
 
@@ -291,6 +289,7 @@
                     margin-top: 24px;
                     max-width: 400px;
                     letter-spacing: 0;
+                    z-index: 1;
                 }
 
                 .heading {
