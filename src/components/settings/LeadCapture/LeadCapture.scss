@@ -3,7 +3,7 @@
     text-align: left;
 
     .lead-capture-content {
-        padding: 32px 24px 27px;
+        padding: 32px 24px 7px;
 
         .custom-input {
             max-width: 74%;
@@ -12,6 +12,7 @@
         .lead-setting-block {
             display: flex;
             column-gap: 16px;
+            margin-bottom: 20px;
         }
 
         .title-block {

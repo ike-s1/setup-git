@@ -4,6 +4,7 @@ import "./General.scss";
 import copy from "copy-to-clipboard";
 import copyIcon from '../../../resources/icons/🦆 icon _copy_.png';
 import { CustomInput } from "../../shared/CustomInput/CustomInput";
+import { toast } from "react-toastify";
 
 export const General = () => {
   const [name, setName] = useState("User’s Chatbot Name");
@@ -12,6 +13,11 @@ export const General = () => {
   const handleSave = () => {
     alert(`Saved name: ${name}`);
   };
+
+  const handleCopyId = () => {
+    copy(chatbotId);
+    toast.success('copied to clipboard');
+  }
 
   return (
     <div className="general-wrapper">
@@ -23,7 +29,7 @@ export const General = () => {
               <span>{chatbotId}</span>{" "}
               <img
                 src={copyIcon}
-                onClick={() => copy(chatbotId)}
+                onClick={handleCopyId}
                 alt={"copy"}
               />
             </p>
