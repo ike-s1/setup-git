@@ -1,0 +1,35 @@
+.lead-capture-wrapper {
+    width: 100%;
+    text-align: left;
+
+    .lead-capture-content {
+        padding: 32px 24px 7px;
+
+        .custom-input {
+            max-width: 74%;
+        }
+
+        .lead-setting-block {
+            display: flex;
+            column-gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .title-block {
+            display: flex;
+            column-gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .checkbox-block {
+            .custom-checkbox {
+                margin-bottom: 24px;
+            }
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 4px;
+        }
+    }
+}

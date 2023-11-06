@@ -41,7 +41,7 @@ function App() {
               <Route path="terms" element={<Terms />} />
               <Route path="privacy" element={<Privacy />} />
             </Route>
-            <Route path="/chatbot-iframe/id" element={<ChatbotFrame />} />
+            <Route path="/chatbot-iframe/id" element={<ChatbotFrame  />} />
           </Routes>
           <ToastContainer
             position="bottom-left"

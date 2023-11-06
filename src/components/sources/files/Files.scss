@@ -1,0 +1,65 @@
+@import '../../../styles//variables';
+
+.upload-files-wrapper {
+  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .uploader-content {
+    height: 210px;
+    border-radius: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:  40px 16px;
+    background: #eceff3;
+  }
+  
+  .upload-file-content {
+    border-bottom: 1px solid #D9D9D9;
+    margin-bottom: 8px;
+  }
+
+  .file-uplaoder {
+    padding: 16px;
+
+
+      .upload-icon {
+       width: auto;
+      }
+
+    label {
+      width: 100%;
+      display: block;
+    }
+
+    .upload-info {
+      margin: 20px 0px;
+      .upload-text {
+        color: $blue;
+        font-weight: 600;
+      }
+  
+      .upload-supported {
+        color:#878787;
+      }
+
+    }
+  }
+  
+
+  ul  {
+    padding-left: 0!important;
+  }
+ 
+}
+
+
+
+
+
