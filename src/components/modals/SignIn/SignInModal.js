@@ -1,9 +1,9 @@
 import React  from "react";
 import "./SignInModal.scss";
-import CustomButton from "../../shared/CustomBtn";
+import CustomButton from "../../Shared/CustomBtn/CustomBtn";
 import Rodal from "rodal";
 import closeIcon from "../../../resources/icons/🦆 icon _cancel_.png";
-import { CustomInput } from "../../shared/CustomInput/CustomInput";
+import { CustomInput } from "../../Shared/CustomInput/CustomInput";
 import { GoogleLogin } from "@react-oauth/google";
 
 export const SignInModal = ({ visible, handleClose }) => {

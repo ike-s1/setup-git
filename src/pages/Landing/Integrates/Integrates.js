@@ -36,7 +36,7 @@ export const Integrates = () => {
       </div>
       <div className="integrates-content">
         <h2 className="integrate-title title">
-          BAZAgpt integrates with your favorite tools
+        Quantumchat integrates with your favorite tools
         </h2>
         <div className="integrate-items">
           {integrationItems.map(({ img, text }, index) => {

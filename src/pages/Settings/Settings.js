@@ -1,5 +1,5 @@
 import React from "react";
-import CustomTabs from "../../components/shared/CustomTabs/CustomTabs";
+import CustomTabs from "../../components/Shared/CustomTabs/CustomTabs";
 import { Outlet} from "react-router-dom";
 
 import './Setting.scss';

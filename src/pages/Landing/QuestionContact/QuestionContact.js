@@ -1,6 +1,6 @@
 import React from 'react';
 import './QuestionContact.scss';
-import CustomButton from '../../../components/shared/CustomBtn';
+import CustomButton from '../../../components/Shared/CustomBtn/CustomBtn';
 
 export const  QuestionContact = () =>  {
   return (

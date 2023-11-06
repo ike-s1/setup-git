@@ -1,9 +1,9 @@
 import React, { useCallback, useState } from "react";
 import "./QnaInput.scss";
-import CustomButton from "../../../shared/CustomBtn";
+import CustomButton from "../../../Shared/CustomBtn/CustomBtn";
 import { useDispatch } from "react-redux";
 import { setQnA } from "../../../../redux/slices/chatbot/slice";
-import { CustomInput } from "../../../shared/CustomInput/CustomInput";
+import { CustomInput } from "../../../Shared/CustomInput/CustomInput";
 
 
 export const QnaInput = () => {

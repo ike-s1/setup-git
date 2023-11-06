@@ -1,9 +1,18 @@
 @import '../../../styles/variables';
 
 .demo-section {
-    width: 100%;
     margin-bottom: 110px;
     position: relative;
+    width: 100%;
+
+    @media (min-width: 1440px) {
+        max-width: 1124px;
+    }
+
+    @media (max-width: 1440px) {
+        max-width: 1124px;
+    }
+
 
     .blue-wave {
         position: absolute;
@@ -11,10 +20,7 @@
         bottom: -67px;
     }
 
-    @media (min-width: 1440px) {
-        max-width: 1124px;
-    }
-    
+  
     .demo-content {
         
         .demo-title {

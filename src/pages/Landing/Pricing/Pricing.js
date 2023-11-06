@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Pricing.scss";
-import CustomButton from "../../../components/shared/CustomBtn";
+import CustomButton from "../../../components/Shared/CustomBtn/CustomBtn";
 import check from "../../../resources/icons/check.svg";
 import checkBlack from "../../../resources/icons/check-black.svg";
 

@@ -1,13 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
-import CustomTabs from "../../components/shared/CustomTabs/CustomTabs";
+import CustomTabs from "../../components/Shared/CustomTabs/CustomTabs";
 import { Route, Routes } from "react-router-dom";
 import "./Dashboard.scss";
-import { CustomSelect } from "../../components/shared/CustomSelect/CustomSelect";
-import { DataRange } from "../../components/shared/DataRange/DataRange";
+import { CustomSelect } from "../../components/Shared/CustomSelect/CustomSelect";
+import { DataRange } from "../../components/Shared/DataRange/DataRange";
 import { addDays } from "date-fns";
-import { CustomInput } from "../../components/shared/CustomInput/CustomInput";
-import { History } from "../../components/dashboard/History/History";
-import { Leads } from "../../components/dashboard/Leads/Leads";
+import { CustomInput } from "../../components/Shared/CustomInput/CustomInput";
+import { History } from "../../components/Dashboard/History/History";
+import { Leads } from "../../components/Dashboard/Leads/Leads";
 
 export const Dashboard = () => {
   const [source, setSource] = useState("Source");

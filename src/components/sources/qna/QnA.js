@@ -1,9 +1,9 @@
 import React from "react";
 import "./QnA.scss";
-import { QnaInput } from "./qnaInput/QnaInput";
+import { QnaInput } from "./QnaInput/QnaInput";
 import { useDispatch, useSelector } from "react-redux";
 import { selectChatbot } from "../../../redux/slices/chatbot/selectors";
-import { QnaItem } from "./qnaItem/QnaItem";
+import { QnaItem } from "./QnaItem/QnaItem";
 import { deleteAllQnA, deleteQnA  } from "../../../redux/slices/chatbot/slice";
 
 export const QnA = () => {

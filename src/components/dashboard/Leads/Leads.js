@@ -1,6 +1,6 @@
 import React  from "react";
 import './Leads.scss';
-import CustomButton from "../../shared/CustomBtn";
+import CustomButton from "../../Shared/CustomBtn/CustomBtn";
 
 export const Leads = () => {
   return (

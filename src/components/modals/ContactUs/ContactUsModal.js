@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./ContactUsModal.scss";
-import CustomButton from "../../shared/CustomBtn";
 import Rodal from "rodal";
 import closeIcon from "../../../resources/icons/🦆 icon _cancel_.png";
-import { CustomInput } from "../../shared/CustomInput/CustomInput";
+import { CustomInput } from "../../Shared/CustomInput/CustomInput";
+import CustomButton from "../../Shared/CustomBtn/CustomBtn";
+
 
 export const ContactUsModal = ({ visible, handleClose }) => {
   const [checked, setChecked] = useState(false);

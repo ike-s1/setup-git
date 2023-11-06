@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./LeadCapture.scss";
-import CustomButton from "../../shared/CustomBtn";
-import { CustomInput } from "../../shared/CustomInput/CustomInput";
-import { CustomCheckbox } from "../../shared/CustomCheckbox/CustomCheckbox";
+import CustomButton from "../../Shared/CustomBtn/CustomBtn";
+import { CustomInput } from "../../Shared/CustomInput/CustomInput";
+import { CustomCheckbox } from "../../Shared/CustomCheckbox/CustomCheckbox";
 
 export const LeadCapture = () => {
   const [title, setTitle] = useState("Let us know how to contact you");

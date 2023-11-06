@@ -1,15 +1,15 @@
 import React from "react";
 import "./Sources.scss";
-import CustomTabs from "../../components/shared/CustomTabs/CustomTabs";
+import CustomTabs from "../../components/Shared/CustomTabs/CustomTabs";
 import { useLocation } from "react-router-dom";
-import { CreateChatbot } from "../../components/sources/CreateChatBot/CreateChatbot";
-import { Text } from "../../components/sources/text/Text";
+import { CreateChatbot } from "../../components/Sources/CreateChatBot/CreateChatbot";
+import { Text } from "../../components/Sources/Text/Text";
 import { selectChatbot } from "../../redux/slices/chatbot/selectors";
 import { useSelector } from "react-redux";
-import { Notion } from "../../components/sources/notion/Notion";
-import { QnA } from "../../components/sources/qna/QnA";
-import { Website } from "../../components/sources/website/Website";
-import { Files } from "../../components/sources/files/Files";
+import { Notion } from "../../components/Sources/Notion/Notion";
+import { QnA } from "../../components/Sources/Qna/QnA";
+import { Website } from "../../components/Sources/Website/Website";
+import { Files } from "../../components/Sources/Files/Files";
 
 const dataSources = {
   ['text'] : <Text/>,

@@ -1,7 +1,7 @@
 import React from "react";
 import "./ChatbotMessage.scss";
 
-const ChatbotMessage = ({ text }) => {
+export const ChatbotMessage = ({ text }) => {
   return (
     <div className="chatbot-message-wrapper">
       <div className="chatbot-message-container">
@@ -15,4 +15,3 @@ const ChatbotMessage = ({ text }) => {
   );
 };
 
-export default React.forwardRef(ChatbotMessage);

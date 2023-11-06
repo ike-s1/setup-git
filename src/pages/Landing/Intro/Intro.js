@@ -1,6 +1,6 @@
 import React from "react";
 import "./Intro.scss";
-import CustomButton from "../../../components/shared/CustomBtn";
+import CustomButton from "../../../components/Shared/CustomBtn/CustomBtn";
 import arrowRightW from "../../../resources/icons/arrowRightW.png";
 import arrowRightB from "../../../resources/icons/arrowRightB.png";
 import wave from "../../../resources/decour/wave.png";

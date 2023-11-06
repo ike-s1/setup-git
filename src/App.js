@@ -6,14 +6,17 @@ import {
   Route,
   Outlet,
 } from "react-router-dom";
-import { Header } from "./components/header/Header";
-import { Modals } from "./components/modals/Modals";
+import { Header } from "./components/Header/Header";
+import { Modals } from "./components/Modals/Modals";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import { MyChatbots } from "./pages/MyChatbots/MyChatbots";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { ChatBotControls } from "./pages/ChatbotControls/ChatBotControls";
 import { Landing } from "./pages/Landing/Landing";
+import { UserAccount } from "./pages/UserAccount/UserAccount";
+import { Terms } from "./pages/Terms/Terms";
+import { Privacy } from "./pages/Privacy/Privacy";
 
 function App() {
   return (
@@ -34,8 +37,11 @@ function App() {
                <Route index element={<Landing/>} />
               <Route path="chatbot/*" element={<ChatBotControls />} />
               <Route path="my-chatbots" element={<MyChatbots />} />
+              <Route path="account" element={<UserAccount />} />
+              <Route path="terms" element={<Terms />} />
+              <Route path="privacy" element={<Privacy />} />
             </Route>
-            <Route path="/chatbot-iframe/id" element={<ChatbotFrame />} />
+            <Route path="/chatbot-iframe/id" element={<ChatbotFrame  />} />
           </Routes>
           <ToastContainer
             position="bottom-left"

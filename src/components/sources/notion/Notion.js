@@ -1,5 +1,5 @@
 import React from "react";
-import CustomButton from "../../shared/CustomBtn";
+import CustomButton from "../../Shared/CustomBtn/CustomBtn";
 import './Notion.scss';
 
 export const Notion = () => {

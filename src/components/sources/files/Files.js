@@ -3,7 +3,7 @@ import "./Files.scss";
 import { FileUploader } from "react-drag-drop-files";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteFile, setFiles } from "../../../redux/slices/chatbot/slice";
-import { UploadedList } from "../../shared/UploadedList/UploadedList";
+import { UploadedList } from "../../Shared/UploadedList/UploadedList";
 import { selectChatbot } from "../../../redux/slices/chatbot/selectors";
 import uploadIcon from "../../../resources/icons/upload.png";
 

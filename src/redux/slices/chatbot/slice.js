@@ -1,15 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  id: "",
-  name: "string",
-  characters: 0,
-  base_prompt: "string",
-  temperature: 0,
-  intro_message: "string",
-  suggested_messages: [
-    "string"
-  ],
+  settings: {
+    id: "",
+    name: "string",
+    characters: 0,
+    base_prompt: "string",
+    temperature: 0,
+    intro_message: "string",
+    suggested_messages: [
+      "string"
+    ]
+  },
   files: [],
   text: "",
   qna: [],
@@ -22,6 +24,11 @@ export const chatbotSlice = createSlice({
   name: "chatbot",
   initialState,
   reducers: {
+    setSettings(state,action) {
+      state.settings = 
+        action.payload
+      
+    },
     setFiles(state, action) {
       state.files = [...state.files, ...action.payload];
     },
@@ -56,6 +63,7 @@ export const chatbotSlice = createSlice({
 });
 
 export const {
+  setSettings,
   setFiles,
   setText,
   setQnA,

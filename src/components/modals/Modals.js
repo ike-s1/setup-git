@@ -1,7 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { selectModal } from "../../redux/slices/modal/selectors";
-import { ContactUsModal } from "./ContactUs/ContactUsModal";
 import {
   togleContactUsModal,
   togleEmbedModal,
@@ -11,6 +10,7 @@ import {
 import { SignUpModal } from "./SignUp/SignUpModal";
 import { SignInModal } from "./SignIn/SignInModal";
 import { EmbedModal } from "./Embed/Embed";
+import { ContactUsModal } from "./ContactUs/ContactUsModal";
 
 export const Modals = () => {
   const dispatch = useDispatch();

@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import "./Model.scss";
-import CustomButton from "../../shared/CustomBtn";
+import CustomButton from "../../Shared/CustomBtn/CustomBtn";
 import Slider from '@mui/material/Slider';
-import { CustomInput } from "../../shared/CustomInput/CustomInput";
+import { CustomInput } from "../../Shared/CustomInput/CustomInput";
+import { CustomSelect } from "../../Shared/CustomSelect/CustomSelect";
 
 export const Model = () => {
   const [basePrompt, setBasePtompt] = useState(
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis facilisis velit et magna ullamcorper, ac sollicitudin nunc tincidunt. Aenean tincidunt orci vel velit pharetra vehicula. Aliquam lobortis ipsum in risus maximus, non pharetra lacus varius. Donec semper luctus magna, vel mattis sapien tristique ac."
   );
-  const [temperature, setTemperature] = useState(0);
+  const [temperature, setTemperature] = useState(0.7);
+  const [model, setModel] = useState();
 
   console.log(temperature)
 
@@ -33,7 +35,11 @@ export const Model = () => {
         <div className="model-settings-content">
           <div className="model-version-block">
             <p>Model</p>
-            <CustomInput value={"Gpt - 3,5 - turbo"} />
+            <CustomSelect
+            options={[{ value: "Gpt - 3,5 - turbo", label: "Gpt - 3,5 - turbo" }]}
+            value={model}
+            onChange={setModel}
+          />
             <p className="model-desc">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
               facilisis velit et magna ullamcorper, ac sollicitudin nunc

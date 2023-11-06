@@ -7,7 +7,11 @@ export const chatbot = {
     return axios.get(to(`conversations/${id}`));
   },
   getSettings: ({ token, id }) => {
-    return axios.get(to(`chatbot/settings/${id}`));
+    return axios.get(to(`chatbot/settings/${id}`), {
+      headers: {
+        'token': token
+      }
+    });
   },
   setSettings: ({
     token,

@@ -36,11 +36,11 @@ export const Footer = () => {
         </div>
         <div className="footer-bottom">
             <div className="footer-about">
-                <p>2023 BAZAgpt. All right reserved.</p>
+                <p>2023 Quantumchat. All right reserved.</p>
                 <ul>
-                    <li><Link to="">Privacy Policy</Link></li>
-                    <li><Link to="">Terms of Service</Link></li>
-                    <li><Link to="">Cookies Settings</Link></li>
+                    <li><Link to="/privacy"  target="_blank">Privacy Policy</Link></li>
+                    <li><Link to="/terms"  target="_blank">Terms of Service</Link></li>
+                    <li><Link to=""  target="_blank">Cookies Settings</Link></li>
                 </ul>
             </div>
         </div>

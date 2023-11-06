@@ -4,7 +4,7 @@ import { deleteAllWebsites, setWebsites } from "../../../redux/slices/chatbot/sl
 import { CustomInput } from "../CustomInput/CustomInput";
 import "./UploadedList.scss";
 import deleteIcon from "../../../resources/chatbot/delete-icon.png";
-import CustomButton from "../CustomBtn";;
+import CustomButton from "../CustomBtn/CustomBtn";;
 
 
 export const UploadedList = ({
@@ -75,7 +75,7 @@ useEffect(() => {
     <div className="uploaded-list">
       <div className="list-title">
         <p>
-          {title}{" "}
+          {title}
           <span>
             ({list?.length || 0} {type === "link" ? "links" : "files"})
           </span>

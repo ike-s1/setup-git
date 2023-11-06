@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import CustomButton from "../../shared/CustomBtn";
+import CustomButton from "../../Shared/CustomBtn/CustomBtn";
 import "./General.scss";
 import copy from "copy-to-clipboard";
 import copyIcon from '../../../resources/icons/🦆 icon _copy_.png';
-import { CustomInput } from "../../shared/CustomInput/CustomInput";
+import { CustomInput } from "../../Shared/CustomInput/CustomInput";
 import { toast } from "react-toastify";
 
 export const General = () => {

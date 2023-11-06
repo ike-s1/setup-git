@@ -1,6 +1,6 @@
 import React from "react";
 import './ContactUs.scss';
-import CustomButton from "../../../components/shared/CustomBtn";
+import CustomButton from "../../../components/Shared/CustomBtn/CustomBtn";
 
 export const ContactUs = () => {
   return (

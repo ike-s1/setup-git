@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import "./Website.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { selectChatbot } from "../../../redux/slices/chatbot/selectors";
-import CustomButton from "../../shared/CustomBtn";
-import { UploadedList } from "../../shared/UploadedList/UploadedList";
+import CustomButton from "../../Shared/CustomBtn/CustomBtn";
+import { UploadedList } from "../../Shared/UploadedList/UploadedList";
 import { deleteWebsite, setWebsites } from "../../../redux/slices/chatbot/slice";
 import axios from "axios";
 import cheerio from 'cheerio';
-import { CustomInput } from "../../shared/CustomInput/CustomInput";
+import { CustomInput } from "../../Shared/CustomInput/CustomInput";
 
 
 export const Website = () => {
@@ -18,11 +18,8 @@ export const Website = () => {
   const [sitemap, setSitemap] = useState("");
 
   const handleDeleteWebsite = (name) => {
-    debugger;
     dispatch(deleteWebsite(name));
   }
-
-
 
   const addCrawlLinks = (links) => {
       dispatch(setWebsites(links)); 
@@ -36,10 +33,6 @@ export const Website = () => {
       const $ = cheerio.load(html);
 
       const links = [];
-
-
-      console.log(links);
-   
 
       $('a').each((index, element) => {
         const link = $(element).attr('href');

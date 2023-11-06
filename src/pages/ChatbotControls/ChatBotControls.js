@@ -6,16 +6,16 @@ import { Sources } from "../Sources/Sources";
 import { Settings } from "../Settings/Settings";
 import { Integrations } from "../Integrations/Integrations";
 import { Dashboard } from "../Dashboard/Dashboard";
-import { General } from "../../components/settings/General/General";
-import { Model } from "../../components/settings/Model/Model";
-import { ChatInterface } from "../../components/settings/ChatInterface/ChatInterface";
-import { Security } from "../../components/settings/Security/Security";
-import { LeadCapture } from "../../components/settings/LeadCapture/LeadCapture";
+import { General } from "../../components/Settings/General/General";
+import { Model } from "../../components/Settings/Model/Model";
+import { ChatInterface } from "../../components/Settings/ChatInterface/ChatInterface";
+import { Security } from "../../components/Settings/Security/Security";
+import { LeadCapture } from "../../components/Settings/LeadCapture/LeadCapture";
 import deleteIcon from "../../resources/icons/delete-icon.png";
 import emdedIcon from "../../resources/icons/embed-code icon.png";
 import shareIcon from "../../resources/icons/share-icon.png";
 import { ChatbotItem } from "../ChatbotItem/ChatbotItem";
-import CustomMenu from "../../components/shared/CustomMenu/CustomMenu";
+import CustomMenu from "../../components/Shared/CustomMenu/CustomMenu";
 import { useDispatch } from "react-redux";
 import { togleEmbedModal } from "../../redux/slices/modal/slice";
 
@@ -34,18 +34,15 @@ export const ChatBotControls = () => {
     dispatch(togleEmbedModal(true))
 }
   
-  
-  
   const chatbotControlsIcon = [
     { icon: emdedIcon, onClick: handleOpenEmbedModal},
     { icon: shareIcon, onClick: () => {} },
     { icon: deleteIcon, onCLick: () => {} },
   ];
 
-
   return (
     <div className="chatbot-controls-wrapper">
-      <h2>BAZA Chat Bot Title</h2>
+      <h2>Quantum Chat Bot Title</h2>
       <div className="chatbot-menu-container">
         <CustomMenu items={chatbotMenu} />
         <div className="chatbot-controls">

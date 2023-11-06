@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import CustomButton from "../../shared/CustomBtn";
+import CustomButton from "../../Shared/CustomBtn/CustomBtn";
 import { useSelector } from "react-redux";
 import { selectChatbot } from "../../../redux/slices/chatbot/selectors";
 import "./CreateChatBot.scss";

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import CustomButton from "../../shared/CustomBtn";
+import CustomButton from "../../Shared/CustomBtn/CustomBtn";
 import './ChatInterface.scss';
 
 export const ChatInterface = () => {
   const [itnroMessage, setIntroMessage] = useState(
-    "Hello! My name is BAZA chatbot, how can I help you?"
+    "Welcome to Quantum Chat!"
   );
   const [suggestedMessage, setSuggestedMessage] = useState(
     "What can I do with this chatbot?"

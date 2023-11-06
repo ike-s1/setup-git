@@ -4,7 +4,7 @@ import Loader from "react-loader-spinner";
 import ReactMarkdown from "react-markdown";
 import gfm from "remark-gfm";
 
-const ChatbotAnswear = ({ text, loading }) => {
+export const ChatbotAnswear = ({ text, loading }) => {
   return (
     <div className="chatbot-answear-wrapper">
       <div className="chatbot-answear-container">
@@ -27,4 +27,3 @@ const ChatbotAnswear = ({ text, loading }) => {
   );
 };
 
-export default React.forwardRef(ChatbotAnswear);

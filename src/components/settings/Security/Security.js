@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./Security.scss";
-import { PRIVAT, PUBLICK } from "../../../constant/chatbotVisibility.constant";
-import CustomButton from "../../shared/CustomBtn";
-import { CustomInput } from "../../shared/CustomInput/CustomInput";
-import { CustomSelect } from "../../shared/CustomSelect/CustomSelect";
+import { PRIVAT, PUBLICK } from "../../../constants/chatbotVisibility.constant";
+import CustomButton from "../../Shared/CustomBtn/CustomBtn";
+import { CustomInput } from "../../Shared/CustomInput/CustomInput";
+import { CustomSelect } from "../../Shared/CustomSelect/CustomSelect";
 
 const visibilityOptions = [PRIVAT, PUBLICK];
 
