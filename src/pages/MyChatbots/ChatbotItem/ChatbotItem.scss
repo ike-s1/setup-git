@@ -1,0 +1,30 @@
+.chatbot-item-container {
+    width: 180px;
+    height: 224px;
+    border-radius: 16px;
+    background: linear-gradient(344deg, #E7E7E7 10.13%, #DCDFFF 87.89%);
+    cursor: pointer;
+
+    .chatbot-item-content {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding: 14px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        .chatbot-name {
+            word-break: break-word;
+            max-width: 180px;
+            font-weight: 600;
+        }
+
+        img {
+            width: 100%;
+            position: absolute;
+            top: 10px;
+            left: 0;
+        }
+    }
+}

@@ -1,0 +1,91 @@
+@import "../../styles/variables";
+
+.dashboard-wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+
+  .dashboard-content {
+    flex: 1;
+  }
+
+  .dashboard-selectors {
+    margin-bottom: 8px;
+    .data-range-wrapper {
+      position: relative;
+      margin-bottom: 8px;
+
+      .rdrInputRanges {
+        display: none;
+      }
+
+      .rdrDateRangePickerWrapper {
+        left: 0;
+        top: 45px;
+        border: 1px solid #E8E8E8;
+      }
+    }
+
+
+
+  }
+
+  .side-block {
+    width: 311px;
+
+    .custom-tabs {
+      width: 100%;
+      border-bottom: 1px solid #E8E8E8;
+      margin-bottom: 14px;
+
+    }
+  }
+
+  .daterangepicker-control-section {
+    max-width: 246px;
+    margin: 30px auto;
+    padding-top: 50px;
+  }
+
+
+  .dashboard-history-messenger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+
+    .history-question-container {
+      width: 100%;
+      border-radius: 8px;
+      padding: 12px 16px;
+      text-align: left;
+
+      &.active {
+        background: #ECEFF3;
+      }
+
+      
+
+      .history-question-header {
+        display: flex;
+        justify-content: space-between;
+     
+
+        .question {
+          color: $blue;
+          font-family: Spline Sans;
+          font-size: 14px;
+          font-weight: 500;
+          font-size: 14px;
+        }
+        .time {
+          color: #6385FF;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

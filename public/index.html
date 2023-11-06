@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>QuantumChat.ai - Elevate Your Conversations</title>
+  <link rel="icon" href="/quantumchatlogo.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+
+<script>
+  window.embeddedChatbotConfig = {
+    chatbotId: "1",
+    domain: "http://localhost:3000"
+  }
+</script>
+ <script>
+  if (!window.location.pathname.includes('/chatbot-iframe/')) {
+    const script = document.createElement("script");
+    script.src = "/embedQuantum.min.js";
+    script.chatbotId = "1";
+    script.domain = "http://localhost:3000";
+    script.defer = true;
+    document.body.appendChild(script);
+  }
+</script>
+</html>

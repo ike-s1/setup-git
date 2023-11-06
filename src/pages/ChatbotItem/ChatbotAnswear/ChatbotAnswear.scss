@@ -1,0 +1,90 @@
+@import '../../../styles//variables';
+
+.chatbot-answear-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 32px;
+    color: #000;
+    padding-top: 12px;
+
+    .chatbot-answear-container {
+        border-radius: 8px;
+        margin-bottom: 15px;
+        padding: 12px;
+        overflow: auto;
+        background: #ECEFF3;
+
+        .chatbot-answear-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            overflow-wrap: break-word;
+
+            .chatbot-answear-text {
+                text-align: left;
+
+                ul,
+                ol {
+                    margin: 16px 0px;
+                    padding-left: 20px;
+
+                    li {
+                        margin: 5px 0px;
+                    }
+
+                }
+
+                ul {
+                    li {
+                        list-style: number;
+                    }
+                }
+
+                ol {
+                    li {
+                        list-style: disc;
+                    }
+                }
+
+            }
+
+            img {
+                max-width: 100%;
+            }
+
+            pre {
+                text-wrap: wrap;
+                margin: 20px 0px;
+                overflow-x: auto;
+                padding: 1rem;
+                border-radius: 3px;
+                background: $main-color;
+                color: white;
+            }
+
+            table {
+                border-collapse: collapse;
+                margin: 10px 0px 0px 0px;
+            }
+
+            td,
+            th {
+                padding: 8px;
+                font-size: 14px;
+                max-width: 200px;
+                color: white;
+                background: $main-color;
+                border: 1px solid #ECEFF3;
+
+            }
+
+            th {
+                padding-bottom: 0.25rem;
+            }
+
+            tbody {
+                border: 1px solid #ECEFF3;
+            }
+    }
+    }
+}

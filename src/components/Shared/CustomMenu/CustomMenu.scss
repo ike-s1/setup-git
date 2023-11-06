@@ -1,0 +1,42 @@
+@import "../../../styles/variables";
+
+
+.custom-menu {
+    width: 1060px;
+    font-size: 18px;
+    margin-bottom: 24px;
+
+    ul {
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 24px;
+
+        li {
+            position: relative;
+
+            a {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -8px;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $blue;
+                    opacity: 0;
+                    transform-origin: bottom right;
+                    transition: all 0.5s linear;
+                }
+
+                &:hover,
+                &.active {
+                    -webkit-text-stroke: 0.7px $main-color;
+
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

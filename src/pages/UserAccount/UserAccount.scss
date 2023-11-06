@@ -1,0 +1,150 @@
+@import '../../styles/variables';
+
+
+.user-account-wrapper {
+    width: 100%;
+    height: auto;
+
+    .user-account-content {
+        margin: 0 auto 50px;
+
+        @media (min-width: 1440px) {
+            max-width: 912px;
+        }
+
+        .user-account-main {
+            height: 467px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 16px;
+            text-align: left;
+
+        }
+
+        .user-plan-block {
+            height: 100%;
+            width: calc(50% - 8px);
+            display: flex;
+            flex-direction: column;
+            border-radius: 8px;
+            padding: 11px 24px 25px;
+            border: 0.5px solid rgba(0, 0, 0, 0.25);
+            background: #FFF;
+
+            .user-plan-title {
+                color: $blue;
+                font-size: 24px;
+                font-weight: 700;
+                margin-bottom: 14px;
+            }
+
+            .plan-info-block {
+                li {
+                    font-weight: 500;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 8px;
+                    img {
+                        margin-right: 8px;
+                    }
+                }
+            }
+
+            .plan-upgrate {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+
+                p {
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: $blue;
+                    margin-bottom: 18px;
+                }
+
+                .custom-button {
+                    height: 59px;
+                    border-radius: 16px;
+                }
+                
+            }
+        }
+
+        .user-info-block {
+            height: 100%;
+            width: calc(50% - 8px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            .user-block-top {
+                width: 100%;
+            }
+
+            .usage-info-wrapper {
+                width: 100%;
+                border-radius: 8px;
+                border: 0.5px solid rgba(0, 0, 0, 0.25);
+                background: #FFF;
+                margin-bottom: 12px;
+
+                .usage-info-content {
+                    padding: 16px 14px 16px 24px;
+
+                    .usage-info-title {
+                        color: $blue;
+                        margin-bottom: 8px;
+                    }
+
+                    p {
+                        margin-bottom: 4px;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .email-info-wrapper {
+                width: 100%;
+                border-radius: 8px;
+                border: 0.5px solid rgba(0, 0, 0, 0.25);
+                background: #FFF;
+
+                .email-info-content {
+                    padding: 17px 20px 29px;
+
+                    .email-info-title {
+                        color: $blue;
+                        margin-bottom: 8px;
+                    }
+
+                    p {
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .user-control-btns {
+                display: flex;
+                justify-self: flex-end;
+                column-gap: 24px;
+                margin: 24px 0px;
+
+                .custom-button {
+                    height: 59px;
+                    border-radius: 16px;
+                }
+
+                .red {
+                    background-color:#9C0000;
+                }
+               
+            }
+        }
+    }
+
+}

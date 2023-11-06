@@ -1,0 +1,32 @@
+.chatbot-controls-wrapper {
+    width: 1072px;
+    min-height: 100vh;
+    margin-bottom: 50px;
+
+    .chatbot-item-wrapper {
+        border-radius: 8px;
+        border: 0.5px solid rgba(0, 0, 0, 0.25);
+        height: 629px;
+        min-height: 300px;
+    }
+
+
+    .chatbot-menu-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .chatbot-controls {
+            display: flex;
+            column-gap: 12px;
+            padding: 0 8px;
+
+            img {
+                width: 23px;
+                height: auto;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,98 @@
+@import '../../../styles/variables';
+
+.footer-wrapper {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    background: #ECEFF3;
+
+    .footer-content {
+        padding: 32px 64px;
+
+        .footer-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 76px;
+            margin-bottom: 56px;
+
+            .footer-logo {
+                margin-left: 24px;
+            }
+
+            .footer-links {
+                display: flex;
+                column-gap: 32px;
+
+
+                a {
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -26px;
+                        left: 0;
+                        width: 100%;
+                        height: 2px;
+                        background-color: $blue;
+                        opacity: 0;
+                        transform-origin: bottom right;
+                        transition: all 0.5s linear;
+                    }
+
+                    &:hover,
+                    &.active {
+                        -webkit-text-stroke: 0.7px #333;
+
+                        &::after {
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                li {
+                    cursor: pointer;
+                    position: relative;
+                }
+            }
+
+            .footer-socials {
+                display: flex;
+                column-gap: 12px;
+                align-items: center;
+
+                img {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(0, 0, 0, 0.25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 74px;
+            margin-top: 32px;
+
+            .footer-about {
+                display: flex;
+
+                p {
+                    margin-right: 24px;
+                }
+
+                ul {
+                    display: flex;
+                    column-gap: 24px;
+
+                    li {
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+    }
+}

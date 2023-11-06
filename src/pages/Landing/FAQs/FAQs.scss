@@ -1,0 +1,33 @@
+@import '../../../styles/variables';
+
+.faqs-section {
+    margin-bottom: 80px;
+    width: 100%;
+
+    @media (min-width: 1440px) {
+        max-width: 1312px;
+    }
+
+    @media (max-width: 1440px) {
+        width: 1200px;
+    }
+
+
+    .faqs-title {
+        margin-bottom: 64px;
+    }
+
+    .faqs-questions {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        column-gap: 64px;
+
+        .question-block {
+            width: 50%;
+
+        }
+    }
+
+
+}

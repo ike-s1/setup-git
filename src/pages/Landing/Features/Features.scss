@@ -1,0 +1,97 @@
+@import '../../../styles/variables';
+
+.features-section {
+    margin-bottom: 138px;
+    width: 100%;
+   
+    @media (min-width: 1440px) {
+        max-width: 1280px;
+    }
+
+    @media (max-width: 1440px) {
+        width: 1200px;
+    }
+
+
+
+    .features-content {
+        width: 100%;
+
+        .features-title {
+            margin: 24px 0px 48px;
+        }
+
+        .info-block {
+            height: 683px;
+            display: flex;
+            column-gap: 24px;
+
+            .info-sidebar {
+                width: 416px;
+                height: 100%;
+                border-radius: 24px;
+                background: linear-gradient(344deg, #E7E7E7 10.13%, #DCDFFF 87.89%);
+
+                .info-sidebar-content {
+                    height: 100%;
+                    padding: 24px 16px 24px 0px;
+                    overflow: hidden;
+
+                    .info-sidebar-item {
+                        max-width: 90%;
+                        margin-left: 24px;
+                        margin-bottom: 28px;
+                        text-align: left;
+                        position: relative;
+                        transition: all 0.3s linear;
+                        cursor: pointer;
+
+                        &.active {
+                            padding-left: 16px;
+                            .item-label {
+                                display: block;
+                            }
+
+                            .item-title {
+                                color: $blue;
+                            }
+                        }
+
+                        .item-label {
+                            display: none;
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            transform: translate(-100%, -50%);
+                            width: 51px;
+                            height: 51px;
+                            border-radius: 50%;
+                            background: $blue;
+                        }
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        .item-title {
+                            font-size: 24px;
+                            font-weight: 600;
+                        }
+
+                        .item-text {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+
+            .info-image {
+                height: 100%;
+                flex: 1 1 0;
+                border-radius: 24px;
+                background: #FFF;
+                box-shadow: -15px 10px 50px 0px rgba(24, 68, 223, 0.20);
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@import '../../../styles/variables';
+
+.custom-button {
+    width: fit-content;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    height: 40px;
+    padding: 0px 24px;
+    justify-content: center;
+    align-items: center;
+    background: $blue;
+
+    &.animate {
+        display:inline-block;
+        transition: all 0.4s ease-in-out;
+        background: linear-gradient(270deg, #008DF2 0%, #2150F3 100%) !important;
+
+        &:hover {
+            transform: scaleX(1.15) translateY(-5px);
+        }
+    }
+
+    &.dark {
+        background: $main-color;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}

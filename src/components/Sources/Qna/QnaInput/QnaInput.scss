@@ -1,0 +1,27 @@
+.qna-input-container {
+    padding: 8px 16px;
+    text-align: left;
+    
+    .qna-input-block {
+        margin-top: 12px;
+    }
+    .answer-block {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 16px;
+        margin-bottom: 12px;
+    }
+
+    .qna-input-block {
+        padding-right: 3px;
+
+    }
+
+    p {
+        margin-bottom: 8px;
+    }
+
+    input {
+        margin-bottom: 8px;
+    }
+}

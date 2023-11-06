@@ -1,0 +1,27 @@
+.history-wrapper {
+    text-align: left;
+    width: 100%;
+    min-height: 544px;
+
+    .history-header-container {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+
+        .history-header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 13px 9px 16px;
+
+            p {
+                font-weight: 600;
+                font-size: 14px;
+            }
+
+            button {
+                font-size: 14px;
+            }
+        }
+    }
+
+
+}

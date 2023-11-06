@@ -1,0 +1,10 @@
+.settings-wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+
+    .settings-content {
+      flex: 1;
+    }
+}

@@ -1,0 +1,16 @@
+@import '../../../styles/variables';
+
+.question-contact {
+    margin-bottom: 103px;
+
+    .question-contact-title {
+        color: $main-color;
+        margin-bottom: 24px;
+    }
+
+    .custom-button {
+        height: 59px;
+        border-radius: 16px;
+    } 
+
+}

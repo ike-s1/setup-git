@@ -1,0 +1,20 @@
+@import "../../../styles/variables";
+
+
+.contact-section {
+    margin-bottom: 120px;
+
+    .contact-title {
+        color: $main-color;
+        margin-bottom: 16px;
+    }
+
+    .contact-subtitle {
+        margin-bottom: 24px;
+    }
+
+    .custom-button {
+        height: 59px;
+        border-radius: 16px;
+    }
+}

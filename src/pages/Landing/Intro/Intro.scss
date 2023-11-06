@@ -1,0 +1,427 @@
+@import '../../../styles//variables';
+
+.intro-section {
+    width: 100%;
+    display: flex;
+    column-gap: 24px;
+    height: 651px;
+    margin-bottom: 107px;
+
+    @media (min-width: 1440px) {
+        max-width: 1312px;
+    }
+
+    @media (max-width: 1440px) {
+        width: 1200px;
+    }
+
+
+    .intro-left-part {
+        width: 50%;
+
+        .build {
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 24px;
+            background: #E8E8E8;
+            overflow: hidden;
+            transition: all 0.4s linear;
+
+            &:hover {
+                transform: translate(5px, -5px);
+
+                .wave {
+                    transform: translateX(25px);
+                }
+
+                .custom-button {
+                    background: $blue;
+                    padding-right: 35px !important;
+                    padding-left: 30px;
+
+                    img {
+                        margin-left: 40px !important;
+                    }
+                }
+            }
+
+            .build-content {
+                height: 100%;
+                padding: 32px 48px;
+                text-align: left;
+                position: relative;
+
+                .ellipse {
+                    position: absolute;
+                    width: 369px;
+                    height: 369px;
+                    position: absolute;
+                    right: -100px;
+                    bottom: -24px;
+                    border-radius: 369px;
+                    background: rgba(197, 172, 255, 0.62);
+                    filter: blur(90px);
+                }
+
+                .wave {
+                    position: absolute;
+                    right: 0;
+                    bottom: 28px;
+                    transition: all 0.4s linear;
+
+                }
+
+                .build-header {
+                    margin: 54px 0px 24px;
+                    font-size: 48px;
+                    line-height: 120%;
+                    letter-spacing: -1.92px;
+
+
+
+                    span {
+                        font-size: 56px;
+                        font-weight: 700;
+                        color: $blue;
+                        letter-spacing: -2.25px;
+
+                        &:first-child {
+                            margin-right: 10px;
+                        }
+
+                        &:last-child {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+
+                .build-text {
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin-bottom: 90px;
+                }
+
+                .build-btn-block {
+                    width: fit-content;
+
+                    .custom-button {
+                        height: 68px;
+                        font-size: 24px;
+                        letter-spacing: 0.7px;
+                        font-weight: 600;
+                        display: flex;
+                        align-items: center;
+                        border-radius: 16px;
+                        padding-right: 16px;
+                        margin-bottom: 8px;
+                        transition: all 0.4s linear;
+                        background: linear-gradient(270deg, #008DF2 0%, #2150F3 100%);
+                        box-shadow: 0px 4px 10px 0px rgba(24, 68, 223, 0.27);
+
+                        img {
+                            transition: all 0.4s linear;
+                            margin-left: 16px;
+                            width: 21px;
+                            height: 20px;
+                        }
+                    }
+
+                    .try-for-free {
+                        text-align: center;
+                        margin-bottom: 16px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .intro-right-part {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+
+        .try-demo {
+            transition: all 0.4s linear;
+            overflow: hidden;
+
+            &:hover {
+                transform: translate(5px, -5px);
+
+                .arrow-right {
+                    transform: rotate(45deg);
+                }
+                
+                 .circle-item-one {
+                   right: 56%!important;
+                 }
+
+                 .circle-line {
+                    right: 56%!important;
+                    width: 190px!important;
+                    
+                 }
+
+                 .two {
+                    right: 56%!important;
+                 }
+
+                 .three {
+                    right: 56%!important;
+                 }
+
+                 .four {
+                    right: 54%!important;
+                 }
+
+                 .five {
+                    right: 52%!important;
+                 }
+            }
+
+            cursor: pointer;
+            width: 100%;
+            height: 50%;
+            border-radius: 24px;
+            background: #6385FF;
+
+            .try-demo-content {
+                height: 100%;
+                padding: 16px 24px;
+                color: white;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                .animated-circles {
+                    width: 306px;
+                    height: 306px;
+                    position: absolute;
+                    bottom: 0;
+                    right: 10px;
+
+                   
+                    .circle-item {
+                        position: absolute;
+                        border: 2px solid $blue;
+                        border-radius: 50%;
+                        transform: translateX(50%);
+                        right: 50%;
+                        transition: all 0.4s linear;
+
+                    }
+
+                    .circle-item-one {
+                        position: absolute;
+                        bottom: 1px;
+                        right: 50%;
+                        transform: translateX(50%);
+                        width: 78px;
+                        height: 78px;
+                        background: $blue;
+                        border-radius: 50%;
+                        transition: all 0.4s linear;
+                    }
+
+                    .two {
+                        width: 109px;
+                        height: 119px;
+                        bottom: -20px;
+                        border-color: white;
+                    }
+
+                    .three {
+                        width: 194px;
+                        height: 194px;
+                        bottom: -45px;
+
+                    }
+
+                    .four {
+                        width: 229px;
+                        height: 229px;
+                        bottom: -45px;
+                    }
+
+                    .five {
+                        width: 264px;
+                        height: 264px;
+                        bottom: -45px;
+                    }
+                    .six {
+                        width: 297px;
+                        height: 297px;
+                        bottom: -45px;
+                    }
+
+                    .circle-line {
+                        transition: all 0.4s ease-in-out;
+                        position: absolute;
+                        height: 2px;
+                        bottom: 40px;
+                        right: 50%;
+                        width: 207px;
+                        background: white;
+                        transform-origin: left;
+                    }
+                }
+
+                .arrow-right {
+                    transition: all 0.4s linear;
+                    height: 40px;
+                    width: 40px;
+                    position: absolute;
+                    right: 8px;
+                    top: 8px;
+                }
+
+                .try-demo-text {
+                    text-align: left;
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin-top: 24px;
+                    max-width: 400px;
+                    letter-spacing: 0;
+                    z-index: 1;
+                }
+
+                .heading {
+                    font-size: 32px;
+                    font-weight: 600;
+                    line-height: 120%;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+
+        .info-block {
+            cursor: pointer;
+            width: 100%;
+            height: 50%;
+            display: flex;
+            gap: 16px;
+
+            .contact-us {
+                height: 100%;
+                width: 50%;
+                border-radius: 24px;
+                background: linear-gradient(344deg, #E7E7E7 10.13%, #DCDFFF 87.89%);
+                transition: all 0.4s linear;
+
+                &:hover {
+                    transform: translate(5px, -5px);
+
+                    .right-arrow {
+                        transform: rotate(45deg);
+                    }
+                }
+
+                .contact-us-content {
+                    padding: 52px 24px;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    position: relative;
+
+
+                    .right-arrow {
+                        transition: all 0.4s linear;
+                        height: 40px;
+                        width: 40px;
+                        position: absolute;
+                        right: 8px;
+                        top: 8px;
+                    }
+
+                    .contact-us-text {
+                        height: 100%;
+                        font-size: 20px;
+                        font-weight: 500;
+                    }
+
+                    .contact-us-heading {
+                        font-size: 36px;
+                        font-weight: 600;
+                        line-height: 120%;
+                    }
+                }
+            }
+
+            .pricing {
+                cursor: pointer;
+                width: 50%;
+                height: 100%;
+                border-radius: 24px;
+                background: #9474DE;
+
+                transition: all 0.4s linear;
+
+                &:hover {
+                    transform: translate(5px, -5px);
+                    
+                    .right-arrow {
+                        transform: rotate(45deg);
+                    }
+
+                    .double-circle {
+                        transform: scale(1.15);
+                    }
+                }
+
+                .pricing-content {
+                    padding: 52px 24px;
+                    height: 100%;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    color: white;
+                    font-weight: 500;
+                    text-align: left;
+
+                    .double-circle {
+                        transition: all 0.4s linear;
+                        position: absolute;
+                        right: 0px;
+                        bottom:17px;
+                    }
+
+                    .right-arrow {
+                        transition: all 0.4s linear;
+                        height: 40px;
+                        width: 40px;
+                        position: absolute;
+                        right: 8px;
+                        top: 8px;
+                    }
+
+                    .pricing-text {
+                        font-size: 20px;
+                        max-width: 188px;
+                    }
+
+                    .pricing-heading {
+                        font-size: 32px;
+                        font-weight: 600;
+                        line-height: 120%;
+                    }
+                }
+            }
+        }
+    }
+
+}

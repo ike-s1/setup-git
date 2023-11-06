@@ -1,0 +1,52 @@
+
+@import "../../../styles/variables";
+
+.upload-qna-wrapper {
+  width: 100%;
+  border-bottom: 1px solid #D9D9D9;
+  
+  .saved-qna-container {
+    border-bottom: 1px solid #D9D9D9;
+    margin-bottom: 8px;
+  }
+  .qna-info-block {
+    position: relative;
+    margin-bottom: 8px;
+
+    .qna-delete {
+      cursor: pointer;
+      position: absolute;
+      right: 8px;
+      top: 0;
+      color: #9C0000;
+      font-weight: 600;
+    }
+
+    p {
+      color: $blue;
+      font-weight: 600;
+      span {
+        color: #B4B4B4;
+      }
+    }
+  }
+  
+
+  .saved-qna {
+    padding: 16px 16px 8px 16px;
+  }
+  
+  .qna-list {
+    max-height: 588px;
+    overflow-y: auto;
+    padding-right: 8px;
+  }
+
+
+  
+}
+
+
+
+
+

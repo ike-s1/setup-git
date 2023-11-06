@@ -1,0 +1,213 @@
+@import '../../../styles/variables';
+
+.pricing-section {
+    width: 100%;
+    margin-bottom: 45px;
+    position: relative;
+
+    @media (min-width: 1440px) {
+        max-width: 1312px;
+    }
+
+    @media (max-width: 1440px) {
+        width: 1200px;
+    }
+
+
+    .ellipse-one {
+        position: absolute;
+        z-index: -1;
+        right: -32%;
+        top: -91px;
+        width: 860px;
+        height: 799px;
+        border-radius: 50%;
+        background: rgba(197, 172, 255, 0.35);
+        filter: blur(150px);
+    }
+
+    .ellipse-two {
+        position: absolute;
+        z-index: -1;
+        left: -30%;
+        bottom: -84px;
+        width: 860px;
+        height: 799px;
+        border-radius: 50%;
+        background: rgba(99, 161, 255, 0.30);
+        filter: blur(150px);
+    }
+
+    .pricing-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .pricing-title {
+            margin: 0 0 16px 0;
+        }
+
+        .pricing-subtitle {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 48px;
+        }
+
+        .pricing-switch-block {
+            display: flex;
+            margin-bottom: 45px;
+
+            .pricing-switch-item {
+                display: flex;
+                padding: 12px 24px;
+                justify-content: center;
+                align-items: center;
+                font-weight: 500;
+                cursor: pointer;
+
+                border-radius: 0px 16px 16px 0px;
+
+                &.active {
+                    background: linear-gradient(270deg, #008DF2 0%, #2150F3 100%);
+                    color: white;
+                }
+
+                &:first-child {
+                    border-radius: 16px 0px 0px 16px;
+                }
+            }
+        }
+
+        .pricing-block {
+            width: 100%;
+            display: flex;
+            column-gap: 32px;
+            height: 799px;
+            color: white;
+
+            .pricing-item {
+                height: 100%;
+                width: 33.3%;
+                border-radius: 24px;
+                background: #ffffff;
+                box-shadow: 0px 4px 16px 0px rgba(26, 26, 26, 0.3);
+
+                .pricing-item-name,
+                .price {
+                    color: $blue;
+                }
+
+                .pricing-item-content {
+                    padding: 32px;
+
+                    .pricing-item-name {
+                        padding-bottom: 32px;
+                        text-align: left;
+                        border-bottom: 1px solid black;
+
+                        span {
+                            font-size: 24px;
+                            font-weight: 700;
+                        }
+                    }
+
+                    .pricing-info-block {
+                        height: 257px;
+                        padding: 32px 0px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+                        border-bottom: 1px solid black;
+                        margin-bottom: 32px;
+
+                        .custom-button {
+                            height: 59px;
+                            padding: 0 128px;
+                            border-radius: 16px;
+                            background: linear-gradient(270deg, #008DF2 0%, #2150F3 100%);
+                            transition: all 0.3s ease-in-out;
+
+                            &:hover {
+                                transform: translateY(-5px);
+                            }
+                        }
+
+                        .price-block {
+                            align-self: flex-start;
+                            text-align: left;
+
+                            .price {
+                                font-family: Roboto;
+                                font-size: 56px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 120%;
+                                margin-bottom: 8px;
+
+                                span {
+                                    font-size: 32px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 130%;
+                                }
+                            }
+
+                            .price-subtitle {
+                                align-self: flex-start;
+                                font-size: 18px;
+                                font-weight: 500;
+                                color: $main-color;
+                            }
+                        }
+                    }
+
+                    .features-block {
+                        color: black;
+                        
+                        .feature-item {
+                            display: flex;
+                            margin-bottom: 8px;
+
+                            img {
+                                margin-right: 16px;
+                            }
+                        }
+
+                    }
+
+                }
+
+                &.small {
+                    background: #9474DE;
+
+                    .pricing-item-name,
+                    .price {
+                        color: white;
+                    }
+
+                    .pricing-item-name,
+                    .pricing-info-block {
+                        border-bottom: 1px solid white;
+                    }
+
+                    .custom-button {
+                        background: white !important;
+                        color: $main-color;
+                        box-shadow: 0px 4px 10px 0px rgba(24, 68, 223, 0.27);
+                    }
+
+                    .features-block {
+                        color: white;
+                    }
+
+                    .price-subtitle {
+                        color: white !important;
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,44 @@
+@import '../../../styles/variables';
+
+.demo-section {
+    margin-bottom: 110px;
+    position: relative;
+    width: 100%;
+
+    @media (min-width: 1440px) {
+        max-width: 1124px;
+    }
+
+    @media (max-width: 1440px) {
+        max-width: 1124px;
+    }
+
+
+    .blue-wave {
+        position: absolute;
+        right: -15%;
+        bottom: -67px;
+    }
+
+  
+    .demo-content {
+        
+        .demo-title {
+            margin: 24px 0px 8px;
+        }
+
+        .demo-subtitle {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 48px;
+        }
+
+        .demo-video {
+            height: 600px;
+            width: 100%;
+            border-radius: 24px;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), #DBDBDB;
+        }
+
+    }
+}

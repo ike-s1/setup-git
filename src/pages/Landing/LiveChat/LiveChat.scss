@@ -1,0 +1,37 @@
+@import '../../../styles/variables';
+
+.live-chat-section {
+    margin-bottom: 99px;
+
+    @media (min-width: 1440px) {
+        max-width: 880px;
+    }
+
+
+    .live-chat-content {
+        .live-chat-title {
+            margin: 40px 0px 16px;
+        }
+
+        .live-chat-subtitle {
+            max-width: 712px;
+            font-size: 18px;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .live-chat-block {
+            .chatbot-item-wrapper {
+                min-height: 600px;
+                border-radius: 8px;
+                border: 0.5px solid rgba(0, 0, 0, 0.25);
+
+                .message-left-block {
+                    display: none;
+                }
+            }
+        }
+
+    }
+}
